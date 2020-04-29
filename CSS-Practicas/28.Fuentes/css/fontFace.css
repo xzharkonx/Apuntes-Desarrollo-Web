@@ -1,0 +1,36 @@
+/*Por lo regular, la declaració las fuentes 
+se ponen en otro archivo css*/
+@font-face{
+	font-family: "RobotoSlab";
+	src:url('../fonts/RobotoSlab-Regular.ttf');
+}
+@font-face{
+	font-family: "RobotoSlab-Bold";
+	src:url('../fonts/RobotoSlab-Bold.ttf');
+}
+
+
+@font-face {
+	font-family: "RobotoSlab-Light";
+	src:url('../fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+	font-family: "RobotoSlab-Thin";
+	src:url('../fonts/RobotoSlab-Thin.ttf');
+}
+
+body{
+	font-family: 'RobotoSlab', sans-serif;
+	/*Fuente de google*/
+	/*font-family: 'Oswald', sans-serif;*/
+}
+
+h1{font-weight: normal;}
+
+p{
+	/*Para hacer bold la fuente de google*/
+	/*Según sus especificaciones en la
+	página de google fonts*/
+	/*font-weight: 700;*/
+}

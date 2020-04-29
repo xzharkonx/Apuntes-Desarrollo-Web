@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<ol id="lista">
+		<li>Lorem ipsum dolor sit amet. 	</li>
+		<li>Lorem ipsum dolor sit amet, consectetur. </li>
+	</ol>
+	<script>
+		var elemento = document.createElement("li"),
+			contenido=document.createTextNode("Nuevo Texto");
+		elemento.appendChild(contenido);
+		// document.body.appendChild(elemento);
+		var padre = document.getElementById("lista");
+		// var padre = document.getElementsByTagName("li")[0].parentNode;
+		//La variable de arriba hace lo mismo que la primera, solo que
+		//obtiene el elemento padre basandose en el primer li
+
+		// padre.appendChild(elemento);//Para colocarlo el elemento dentro de el elemento lista
+		primerElemento = document.getElementsByTagName("li")[1];
+		padre.insertBefore(elemento,primerElemento);
+	</script>
+</body>
+</html>

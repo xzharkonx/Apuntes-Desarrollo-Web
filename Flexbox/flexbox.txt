@@ -1,0 +1,100 @@
+﻿Flexbox es un conjunto de propiedades que nos permiten distribuir nuestros elementos de una forma flexible para mejores layouts / plantillas o diseños mas facilmente
+
+Para utilizar flexbox necesitamos un contenedor padre que tenga elementos hijos. Ya que a estos son los que se haran flexiblex.
+
+Flexbox se divide en 2 grupos de propiedades:
+	- Propiedades para los elementos padre
+	- Propiedades para los elementos hijo
+
+=================================
+Propiedades del contenedor padre:
+=================================
+
+- display:flex;
+	Nos permite habilitar que los elementos hijos sean flexibles
+
+- flex-direction:;
+	row | row-reverse | column | column-reverse
+
+- flex-wrap:;
+	no-wrap | wrap | wrap-reverse
+
+- flex-flow: <flex-direction> || flex-wrap;
+	Es un atajo de flex-direction y flex-wrap.
+
+Nos permite editar la posición horizontalmente de nuestras cajas,
+si no caben las posicionara debajo.
+- justify-content:;
+	flex-start | flex-end | center | space-between | space-around
+
+
+	space-between:
+			Esta propiedad deja un espaciado entre las demás cajas.
+	space-around: 
+			Esta propiedad deja un espaciado de margen además de un
+			espaciado entre las cajas.
+
+Nos permite editar la posición verticalmente de nuestras cajas
+siempre y cuando la caja padre tenga un alto demaciado grande.
+- align-items:;
+	flex-start | flex-end | center | stretch | baseline
+
+	stretch:
+		Esta propiedad hace que todas las cajas o div hijas tomen todo el tamaño ya sea
+		hacia arriba o hacia abajo de la padre (como si se estiraran, también NO
+		DEBEN tener un height definido).
+
+	baseline:
+		Esta propiedad alínea las cajas o div hijas con respecto al texto que tengan dentro.
+
+Nos permite mover contenido de varios elementos que no caben en una sola línea.
+Recuerda que si pones esta NO DEBES tener la de alig-items
+- align-content:;
+	IMPORTANTE: Esta propiedad solo funciona cuando hay mas de una linea de elementos
+	dentro de una caja padre.
+
+	flex-start | flex-end | center | stretch | space-between | space-around
+
+
+=================================
+Propiedades de los elementos hijo
+=================================
+
+Cambiar el orden de las cajas hijo.
+Podemos enumerar por orden cada conjunto de cajas (o caja) con una clase
+y otro conjunto de cajas (o caja) con otra clase y aplicando la propiedad
+order podremos ordenarlas segun su numeración.
+- order:1;
+
+- flex-grow:;
+	Acepta un número que servira de proporcion para hacer crecer el elemento en relacion a los otros.
+	Todos por defecto tienen un flex-grow de 1. Entonces se ajustarán al 100% del ancho de su caja padre.
+	Si un elemento tiene mucho espacio horizontalmente por que no hay elementos, este ocupara todo el espacio.
+
+	Si todos los elementos tienen flex-grow 1 el espacio restante se distribuira entre los elementos.
+
+- flex-shrink:;
+	Define la habilidad de un elemento para hacerse mas pequeño.
+	Es decir, que si tiene 200px de ancho, no bajará de ese ancho si ponemos:
+		 flex-shrink:0;
+	Por defecto todos se pueden hacer mas pequeños pero si le ponemos flex-shrink 0
+	el elemento no podra ser mas pequeño que su ancho especificado.
+
+- flex-basis:;
+	Nos permite especificar el valor inicial que tendra un elemento.
+
+
+- flex:1 1 auto;
+	Es un atajo para flex-grow, flex-shrink y flex-basis.
+	Significa que:
+		- Va a tener una proporcion de 1 para crecer
+		- Va a tener una proporcion de 1 para hacerce más pequeño
+		- Va a tener un tamaño automatico.
+
+Para mover los elementos verticalmente si se tiene suficiente espacio en la caja padre.
+Ya sea un conjunto de elementos o un elemento dentro de la caja padre
+- align-self:;
+	auto | flex-start | flex-end | center | baseline | stretch;
+
+	stretch: Para que abarque todo el alto y lo bajo, pero debes de tener un
+		height: auto; para poder ponerlo automático responsivo.

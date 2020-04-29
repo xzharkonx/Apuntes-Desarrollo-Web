@@ -1,0 +1,192 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, Sans-serif;
+	font-style: 16px;
+	background: #4a465b;
+}
+
+.contenedor{
+	/*El contenedor pasa a tener un ancho en %
+	aqui solo dejamos un margen de 10%*/
+	width: 	90%;
+
+	/*El max-width sirve como tamaño fijo maximo que tendra
+	nuestra caja en el ancho de la página,
+	pero el porsentaje que abarcara
+	sera dinamico con la propiedad de arriba definida
+	en %*/
+	max-width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+header{
+	background: #fff;
+}
+
+header nav{
+	width: 100%;
+}
+
+header nav ul{
+	width: 100%;
+	overflow: hidden;
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+	/*display: inline-block;*/
+}
+
+header nav ul li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 20px;
+	color: #000;
+	transition: all 1s ease;
+}
+
+header nav ul li a:hover{
+	
+	background: #000;
+	color: #fff;
+}
+
+.main{
+	/*le indicamos que tendra un ancho de un 70%
+	para que sea dinamico*/
+	width: 70%;
+	background: #fff;
+	float: left;
+}
+
+.main .imagen{
+	width: 100%;
+}
+
+.main .imagen img{
+	width: 100%;
+	vertical-align: top;
+}
+
+.main .post{
+	padding: 40px;
+}
+
+.main .post article h2{
+	margin-bottom: 20px;
+	color: #424242;
+	/*font-weight: normal;*/
+	/*font-size: 2em;*/
+}
+
+.main .post article p{
+	margin-bottom: 15px;
+	line-height: 27px;
+}
+
+aside{
+		/*le indicamos que tendra un ancho de un 30%
+	para que sea dinamico*/
+	width: 30%;
+	background: #161f26;
+	padding: 20px;
+	color: #fff;
+	float: left;
+}
+
+aside .widget{
+	margin-bottom: 20px;
+}
+
+aside .widget .titulo{
+	color: #ff8000;
+	border-bottom: 1px solid #ff8000;
+	margin-bottom: 10px;
+}
+
+aside .widget ul{
+	list-style: none;
+}
+
+aside .widget ul li{
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding: 10px 0;
+}
+
+aside .widget ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+aside .widget ul li a:hover{
+	color: #8f8f8f;
+	}
+
+aside .widget p{
+	line-height: 27px;
+}
+
+
+footer{
+	/*Como para empezar en una línea más abajo*/
+	clear: both;
+
+	/*le indicamos que tendra un ancho de un 70%
+	para que sea dinamico*/
+	width: 70%;
+
+	background: #000;
+	color: #fff;
+	padding: 15px 0;
+	text-align: center;
+
+}
+
+/*
+Sirve para cambiar los efectos de la página
+segun sea el tamaño actual de su ancho,
+al llegar a este, los valores toman estos
+y así los podemos cambiar según cual quier ancho
+que sea y podemos tener varios*/
+@media screen and (max-width: 888px) {
+	
+	.main{
+		width: 100%;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+	footer{
+		width: 100%;
+	}
+}
+
+/*@media screen and (max-width: 500px) {*/
+	
+	/*Todo el codigo aquí*/
+
+/*}*/
+
+
+@media screen and (max-width: 375px) {
+	
+	.derechos{
+		display: block;
+	}
+
+	.derechos::first-letter{
+		color: #000;
+	}
+
+}

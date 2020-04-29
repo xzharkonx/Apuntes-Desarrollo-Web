@@ -1,0 +1,22 @@
+@mixin colores($fondo, $articulo)
+	body
+		background: $fondo
+	.articulo
+		background: $articulo
+
+@include colores(#ff8000,#fff)
+
+@mixin borde-redondeado($pixeles)
+	border-radius: $pixeles
+	-moz-box-sizing: $pixeles
+	-webkit-box-sizing: $pixeles
+	-o-box-sizing: $pixeles
+	box-sizing: $pixeles 
+
+article
+	@include borde-redondeado(5px)
+	
+
+footer
+	@include borde-redondeado(5px)
+	background: rgba(#D01818,0.5)

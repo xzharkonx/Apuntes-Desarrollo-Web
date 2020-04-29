@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modificando Estilos de los Elementos</title>
+	<style>
+		.thumb{
+			width: 200px;
+			transition: 300ms all ease;
+		} 
+		.grande{
+			width: 400px;
+		}
+		.titulo{
+			border: 1px solid navy;
+			background: #ccc;
+			padding: 10px;
+		}
+		.tituloGrande{
+			font-size: 60px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="encabezado" class="">Soy un encabezado \^.^/</h1>
+	<script>
+		var encabezado = document.getElementById("encabezado");
+		encabezado.setAttribute("class", "titulo tituloGrande");
+		encabezado.style.color = "navy";//Cambiando el color de JavaScript a Css
+		encabezado.style.background  = "#66EAEF";//Respetar las comillas
+		encabezado.style.paddingTop = '60px';//Cambiar espacio de el Top
+		encabezado.style.fontFamily = 'castellar';//Cambiar letra
+		//encabezado.style.fontSize = "30px";//Cambiar tamaño de la letra :) 
+
+		encabezado.className = encabezado.className.replace("tituloGrande", "")//Reemplaza la clase por otra, en este caso la vacia
+	</script>
+</body>
+</html>

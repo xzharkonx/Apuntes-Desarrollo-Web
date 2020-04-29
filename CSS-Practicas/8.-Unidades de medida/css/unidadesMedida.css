@@ -1,0 +1,43 @@
+body{
+	font-size:20px;
+}
+
+p{
+
+	font-size: 1.5em; /* = 30px */
+}
+
+.contenedor_padre{
+	font-size:1.25em;
+}
+
+.hijo{
+	width: 10em;
+	height: 10em;
+	background: #000;
+	color:#fff;
+}/*
+
+Unidades Relativas
+	px - pixel
+	em - Relativa al tamaño de fuente que tenga su elemento padre o el mas cercano
+	rem - Relativa al tamaño de fuente especificado en el body.
+	% - porcentaje
+
+Unidades Abosultas
+	Estas medidas nunca las vas a usar en el diseño web, pero aqui estan para que las conozcas
+	in - inches (pulgadas)
+	cm - centimetros
+	mm - milimetros
+*/
+
+/* 1em equivale a 16 px */
+/* Pero si en el body se especifica que font-size: 20px
+entonces 1em equivaldria a esos 20px */
+
+/* Para transforma los pixeles a em de cualquiera de nuestros elementos
+hay que dividir esos pixeles entre los pixeles del body. 
+Por ejemplo: 200px de ancho y alto de un div 
+entre 20 px de font-size que tiene el body */
+/* Saldría 200/20 = 20em */
+

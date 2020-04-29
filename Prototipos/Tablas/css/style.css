@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial;
+}
+
+.container{
+	width:100%;
+	max-width: 1000px;
+	margin: 40px auto;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	background: #000;
+}
+
+nav ul li{
+	display: inline-block;
+	background: #000;
+}
+
+nav ul li a{
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 0px;
+	padding: 20px 10px;
+	color: #fff;
+}
+nav ul li a:hover{
+	background: #fff;
+	color:#000;
+}
+table, td, th{
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+table{
+	/*Para colapsar los bordes de todos los
+	elementos de la tabla*/
+	border-collapse: collapse;
+	/*width: 100%;*/
+	text-align: center;
+	/*Por si la queremos centrar*/
+	/*margin: 0 auto;*/
+
+}
+
+/*Margenes en las celdas*/
+th,td{
+	padding: 10px 10px;
+}
+/*Fila de encabezado*/
+th{
+	background: #009ddc;
+	color: #fff;
+}
+
+/*Para cambiar el color de las filas
+al pasar el mouse*/
+tr:hover{
+	background: #e5e5e5;
+}
+
+
+/*Main Section*/
+.main{
+	width:100%;
+	max-width: 700px; 
+	display: inline-block;
+	line-height: 24px;
+	font-family: lato;
+	float: left;
+}
+
+.main h2{
+	font-family: Roboto;
+	margin: 10px 0;
+}
+/*Table Section*/
+
+.tablita{
+	width:100%;
+	max-width: 300px;
+	padding: 10px 0;
+	float: left;
+}
+
+.trabajos{
+clear: both;
+}
+
+section .trabajo{
+	margin: 10px 10px 10px 0;
+	width: 190px;
+	height: 190px;
+	background: #F91470;
+	float: left;
+}
+
+.trabajos2{
+/*clear: both;*/
+}
+section .trabajo2{
+	margin: 10px 10px 10px 0;
+	width: 190px;
+	height: 190px;
+	background: #14D6F9;
+	float: left;
+}
+
+.trabajos3{
+/*clear: both;*/
+}
+section .trabajo3{
+	margin: 10px 10px 10px 0;
+	width: 190px;
+	height: 190px;
+	background: #14F94A;
+	float: left;
+}
+
+footer{
+	width: 100%;
+	background: #000;
+	clear: both;
+	padding: 40px;
+}
+
+footer p{
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	font-family: Lato;
+	font-style: italic;
+	font-weight: 200;
+}

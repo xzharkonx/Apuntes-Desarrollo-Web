@@ -1,0 +1,49 @@
+.caja{
+	background: #ffaa5a;
+	width: 200px;
+	height: 200px;
+
+	/*Mover */
+	/*izquierda a derecha de arriba abajo*/
+	/*transform: translate(300px, 0px);*/
+	
+	/*Escalar*/
+	/*de ancho y alto*/
+	/*tranform: scale(1.1,1.1);*/
+
+	/*Rotar*/
+	/*transform:rotate(45deg);*/
+
+	/*Sesgar*/
+	/*Hacerlo como de lado*/
+	/*transform: skew(20deg,0deg);*/
+
+	/*Google*/
+	/*-webkit-transform: translate(200px) scale(1.5,1.5) rotate(10deg);*/
+
+	/*Mozila Firefox*/
+	/*-moz-transform: translate(200px) scale(1.5,1.5) rotate(10deg);*/
+
+	/*Opera*/
+	/*-o-transform: translate(200px) scale(1.5,1.5) rotate(10deg);*/
+
+	/*Todos*/
+	transform: translate(200px) scale(1.5,1.5) rotate(10deg);
+}
+
+
+
+/*
+Cosas que podemos hacer con transform:
+- Trasladar elementos
+- Escalar Elementos
+- Rotar Elementos
+- Sesgar Elementos
+*/
+
+.caja2{
+	background: #27D3F2;
+	width: 200px;
+	height: 200px;
+	transform: translate(148px,96px) scale(1.5,1.5) rotate(10deg);
+	}

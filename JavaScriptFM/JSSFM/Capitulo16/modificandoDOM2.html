@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<ol id="lista">
+		<li id="primero">Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	</ol>
+	<script>
+		//MODIFICANDO EL CONTENIDO DE LOS ELEMENTOS************
+		var primerElemento = document.getElementById("primero");
+		primerElemento.innerHTML = "Nuevo Texto <i class \"foo\">Creado con Éxito!</li>";//Este sirme para agregar incluso etiquetas que las toma en cuenta el html para que jale el texto y también respete lo que hacen las etiquetas
+
+		//MODIFICANDO EL CONTENIDO DE LOS ELEMENTOS****************
+
+		//REMPLAZANDO ELEMENTOS DE UN LI POR OTRO EN ESTE CASO***************
+		var elemento = document.createElement("li"),
+			contenido=document.createTextNode("Nuevo Texto juju");
+		elemento.appendChild(contenido);
+		var padre = document.getElementsByTagName("li")[0].parentNode;
+		var referencia = document.getElementsByTagName("li")[0];
+		padre.replaceChild(elemento,referencia);
+		//REMPLAZANDO ELEMENTOS DE UN LI POR OTRO EN ESTE CASO**************
+
+		//ELIMINANDO ELEMENTOS DE LA LISTA**********************************
+		referencia2 = document.getElementsByTagName("li")[1];
+		padre.removeChild(referencia2);
+	</script>
+</body>
+</html>

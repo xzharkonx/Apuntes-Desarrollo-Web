@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f2f2f2;
+	font-family: Arial;
+}
+
+.contenedor{
+	width: 80%;
+	max-width: 700px;
+	height: 500px;
+	margin: 0 auto;
+	background: #212d40;
+	/*Para agregar flexibilidad a las cajas hijas*/
+	display: flex;
+
+	/*Propiedades*/
+	/*row | row-reverse | column | column-reverse*/
+
+	flex-direction: row;
+	/*Para quitar la adaptación entre cajas, ya que 
+	no se respetan sus espacios horizontales*/
+	flex-wrap: wrap;
+	
+	/*Propiedades*/
+	/*no-wrap | wrap | wrap-reverse*/
+
+	/*También existe está para colocar las dos directamente*/
+	/*flex-flow:row wrap;*/
+
+	/*Para centrar contenido horizontalmente*/
+	justify-content: space-between;
+
+	/*Propiedades*/
+	/*flex-start | flex-end |
+	| center | space-between | space-around*/
+
+
+	/*Centar cajas verticalmente para 1 Sola línea*/
+	/*-moz-align-items: center;
+	align-items: center;*/
+	
+	/*Centrar cajas verticalmente para varias líneas,
+	si no, no funcionará.*/
+	/*align-content: center;*/
+	/*overflow: hidden;*/
+}
+
+.caja{
+	width: 100px;
+	height: 100px;
+	background: #f79256;
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	/*order:1;*/
+	flex:1 1 auto;
+	transition:all 2s ease;
+}
+
+
+.dos {
+	/*Sirve para darle un tamaño definido*/
+	/*flex-shrink: 0;*/
+	/*Funciona como width*/
+	/*flex-basis:400px;*/
+
+	/*Ira creciendo en la proporcion a las demás cajas*/
+	/*flex-grow:2;*/
+
+	/*para hacer que tome todo el espaciado
+	ya sea hacia arriba o hacia abajo*/
+	align-self:stretch;
+	height: auto;
+}

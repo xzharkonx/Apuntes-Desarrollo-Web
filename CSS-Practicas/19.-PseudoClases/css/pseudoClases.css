@@ -1,0 +1,53 @@
+body{
+	font-family: Arial, Sans-serif;
+}
+
+a{
+	background: #4357ad;
+	padding: 20px 30px;
+	display: inline-block;
+	font-size: 20px;
+	color: #fff;
+}
+
+a:hover{
+	background: #009ddc;
+	padding: 25px 35px;
+}
+/*Solo funciona cuando aún no se a visitado
+el enlace y se le hace 1 click*/
+a:active{
+	background: red;
+}
+a:visited{
+	background: #ccc;
+}
+
+div{
+	width: 500px;
+}
+
+div p:hover{
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+}
+
+/*Sirve para darle diseño a la primera linea del
+párrafo, también puede escribirse con 2 ::*/
+/*div p::first-line{}*/
+
+div p:first-line{
+	background: #3a3a3a;
+	color: #fff;
+	font-size: 20px;
+}
+
+/*Sirve para indicar alguno de los hijos que esten
+dentro de un contenedor, en este caso el
+párrafo 2 es el segundo hijo del div*/
+div p:nth-child(2){
+	background: #009ddc;
+	color: #fff;
+	padding: 10px;
+}

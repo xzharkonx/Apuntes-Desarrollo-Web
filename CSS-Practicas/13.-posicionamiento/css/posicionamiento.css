@@ -1,0 +1,80 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f2f2f2;
+	font-size: 12px;
+}
+
+.caja{
+	width: 200px;
+	height: 200px;
+	background: #0e6ba8;
+	margin: 20px;
+	float: left;
+}
+
+/*.cajaPadre{
+	margin: 20px;
+	bottom: #2e294e;
+	width: 500px;
+	height: 500px;
+	position: relative;
+}*/
+
+.posicionada{
+	background: #6695e8;
+/*	position: absolute;
+	top: ;
+	right: ;
+	left: 200px;
+	bottom: ;*/
+}
+
+/* Tipos de Posicionamiento:
+
+	- Normal (static): Posicionamiento por defecto con el que los navegadores acomodan los elementos
+	- Relativo (relative): Nos permite posicionar una caja y despues moverla desde su lugar original.
+	- Abosluto (absolute): Nos permite posicionar una caja respecto a su contenedor y el resto de elementos ignoran la nueva posicion.
+	- Fijo (fixed): Nos permite posicionar una caja en donde su posicion respecto a la pantalla del usuario siempre va a ser la misma.
+	- Flotante (float): Nos permite desplazar las cajas todo lo posible hacia la derecha o izquierda.
+
+*/
+
+p{
+	color:#f2f2f2;
+	font-family: Arial;
+	font-size:3em;
+	/*Se puede posicionar el numero así*/
+	position: relative;
+	top:40%;
+	left: 45%;
+	 /*o así con margenes interiores con padding: ;*/
+	 /*padding: 42.5%;*/
+}
+
+.caja-padre{
+	background: rgba(35,163,229,1);
+	overflow: hidden;
+}
+
+.caja-transparente{
+	visibility: hidden;
+}
+
+.caja-oculta{
+	display: none;
+}
+footer{
+	width: 100%;
+	background: #000;
+}
+footer p{
+	font-size: 2em;
+	position: static;
+	padding: 20px;
+	text-align: center;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AACC,SADQ,CACR,OAAO,CAAC;EACP,KAAK,EAAE,OAAO;CAAG;;AAFnB,AAIC,SAJQ,CAIR,CAAC,CAAC;EACD,KAAK,EAAE,IAAI;CAAG",
+    "sources": [
+        "../SassFM/2.-Variables/sass/variables.sass"
+    ],
+    "names": [],
+    "file": "variables.css"
+}

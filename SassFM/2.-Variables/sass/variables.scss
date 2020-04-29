@@ -1,0 +1,27 @@
+$colorPrimario: #226fc1;
+$parrafo: rgb(21, 255, 0);
+$negro: rgb(0, 0, 0);
+$autor: #00e1ff;
+
+.articulo {
+
+	.titulo {
+
+		color: $colorPrimario;
+
+    }
+    
+    .autor {
+        color: $autor;
+    }
+
+    p {
+        color: $parrafo;
+    }
+        
+}
+
+p {
+    color:$negro;
+}
+

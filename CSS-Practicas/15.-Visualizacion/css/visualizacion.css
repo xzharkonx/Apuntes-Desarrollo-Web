@@ -1,0 +1,118 @@
+body {
+	font-family: Arial,Sans-serif;
+	background: #f2f2f2;
+}
+a {
+	/* Sirve para desaparecer y 
+	también quita el espacio de los elementos */
+	/*display: none;*/
+	
+	/* Sirve para desaparecer pero 
+	no quita el espacio de los elementos */
+	/*visibility: hidden;*/
+	
+	background: #246eb9;
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	
+}
+
+a:link {
+	color: #fff;
+
+}
+a:visited {
+	color: #ccc;
+}
+a:hover {
+	background: #14E3DC;
+	color: #fff;
+}
+/*
+La propiedad overflow sirve para ocultar lo que
+hay fuera de la caja, en este caso el texto
+de esta caja que queda sobrante, se oculta
+con la propiedad:
+overflow: hidden;
+
+
+O bien con la propiedad:
+overflow: auto;
+Le indicamos que añada una barra de scroll
+para que nosotros podamos scrollear hacia abajo
+para ver el texto*/
+.caja {
+	color: #000;
+	background: #4fb560;
+	margin: 20px 0;
+	width: 200px;
+	height: 100px;
+	/*overflow: hidden;*/
+	overflow: auto;
+
+}
+
+/*la propiedad:
+overflow: hidden;
+También ayuda la caja padre a mostrarse si
+existen varios float que lo evitan*/
+.contenedor{
+	width: 600px;
+	background: #ccc;
+	margin: 20px 0;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.izquierda{
+	float: left;
+	border-radius: 100px;
+}
+.derecha{
+	float: right;
+	border-radius: 100px;
+}
+
+
+/* display [inline | block | none | inline-block | flex] */
+
+/*
+	table| inline-table | table-row-group | table-header-group | table-footer-group |
+	table-row | table-column-group | table-column | table-cell | table-caption
+*/
+
+.texto {
+	padding: 20px 20px;
+	line-height: 30px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: BOLD;
+}
+
+.contenedor2 .caja{
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+
+/*La propiedad Z-index sirve  para superponer
+bloques encima de otros como layers o capas
+entre más alto su numero, mayor posion por
+encima tendra de los demás bloques*/
+.azul{
+	background: #009ddc;
+	z-index: 10;
+	border-radius: 30px;
+}
+.gris{
+	background: #32021f;
+	left: 50px;
+	bottom: 80px;
+	z-index: 9;
+	border-radius: 30px;
+}
+
+.azul:hover{
+	background: #FF0000;
+}

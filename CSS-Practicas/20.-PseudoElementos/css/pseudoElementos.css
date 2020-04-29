@@ -1,0 +1,61 @@
+/*Para Editar la primera letra del parrafo*/
+
+p::first-letter{
+	font-size:40px;
+	font-weight: bold;
+}
+
+/*Para Editar la primera linea del parrafo*/
+
+p::first-line{
+	background: #cf5c36;
+	line-height: 40px;
+}
+
+/*Para subrayar*/
+
+*::selection{
+	background: #f9a03f;
+	color: #fff;
+}
+
+/*Para subrayar pero soportado en mozila*/
+
+*::-moz-selection{
+	background: #f9a03f;
+	color: #fff;
+}
+
+/*Crear una caja*/
+.caja{
+	background: #f9a03f;
+	height: 150px;
+	width: 150px;
+}
+
+/*Aquí indicamos contenido que ira antes
+Es obligatorio agregar la etiqueta
+content: '';
+para que se reflejen los cambios*/
+.caja::before{
+	content: 'Contenido andes de la caja';
+	display: block;
+	background: #3a3a3a;
+	color: #fff;
+}
+
+/*Aquí indicamos contenido que ira despues
+Es obligatorio agregar la etiqueta
+content: '';
+para que se reflejen los cambios
+*/
+
+.caja::after{
+	content: '';
+	width: 50px;
+	height: 50px;
+	display: block;
+	background: #000;
+	position: relative;
+	left: 200px;
+}

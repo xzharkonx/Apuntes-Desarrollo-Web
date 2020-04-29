@@ -1,0 +1,31 @@
+a {
+	font-size:20px;
+	/* Para quitar el subrayado del enlace */
+	text-decoration: none;
+	/* Subrayado que viene por defecto */
+	/* text-decoration: underline; */
+	/* subrayado tachado */
+	/* text-decoration:line-through; */
+}
+
+/*Enlace sin visitar*/
+a:link {
+	text-decoration:none;
+}
+
+/*Enlace visitado*/
+a:visited {
+	color:#ccc;
+}
+
+/*Estado del enlace mientras se pasa el mouse por encima*/
+a:hover {
+	background:#f9a03f;
+	color:#fff;
+}
+
+/*Estado del enlace mientras se esta haciendo click*/
+a:active {
+	background: #FF4800;
+	text-decoration: underline;
+}

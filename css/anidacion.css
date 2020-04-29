@@ -1,0 +1,42 @@
+body {
+  background: #1b3d82;
+  font-family: Arial;
+}
+
+.articulo {
+  background: #e9f1f7;
+  width: 500px;
+  padding: 20px;
+}
+
+.articulo .titulo {
+  color: #f9a03f;
+}
+
+.articulo .autor {
+  color: #4d5061;
+}
+
+.articulo p a {
+  color: #f9a03f;
+}
+
+.articulo div {
+  text-align: center;
+}
+
+.articulo div a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #f9a03f;
+  border: 1px solid #f9a03f;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.articulo div a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFDC1D;
+}
+/*# sourceMappingURL=anidacion.css.map */

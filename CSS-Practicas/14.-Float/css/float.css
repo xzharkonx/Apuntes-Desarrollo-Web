@@ -1,0 +1,64 @@
+*{
+	padding:0;
+	margin: 0;
+}
+
+body{
+	background: #f2f2f2;
+	font-family: Arial;
+}
+
+/*La propiedad
+overflow: hidden;
+Corrige el error de la caja padre que no
+se muestra por que al ponerle la propiedad
+float a las otras cajas, no sabe como 
+abarcarlas. */
+.cajaPadre{
+	background: #2e294a;
+	width: 700px;
+	overflow: hidden;
+}
+
+/*La propiedad
+clear:both
+También corrige el error de la caja padre,
+pero en este caso se coloca un div al final
+de la caja padre por debajo de las demás
+con la clase paraa colocarle esta propiedad*/
+/*.clear {
+	clear:both;
+}*/
+
+
+.caja{
+	width: 200px;
+	color: #fff;
+	font-size: 38px;
+	height: 200px;
+	background: #0e3ba8;
+	margin: 20px;
+}
+
+.uno{
+	float: left;
+}
+
+.dos{
+	float:right;
+}
+
+.articulo{
+	width: 1200px;
+	background: #ccc;
+}
+.anterior{
+	float: left;
+	/*Se hace el width para el el contenedor
+	del parrafo tenga un ancho definido y
+	no abarque todo*/
+	width: 300px;
+}
+.articulo img{
+	float:left;
+}

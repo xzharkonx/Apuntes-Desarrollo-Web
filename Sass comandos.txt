@@ -1,0 +1,177 @@
+==================
+Comandos de SASS
+URL: https://sass-lang.com/
+==================
+
+Recomendable utilizar Koala.
+URL de Descarga: http://koala-app.com/
+
+
+==================
+Con Ruby
+==================
+Installar Ruby.
+Podemos descargarlo e instalarlo en la siguiente página:
+|https://rubyinstaller.org/downloads/
+
+Instalar SASS en Ruby:
+
+
+Unas vez dento de la carpeta contenedora de los archivos 
+debemos crear un archivo (aunque sea vacio) de css y
+claro nuestro archivo .sass o .scss y aplicar el siguiente comando:
+Compilar archivo .sass o .scss:
+
+sass estilos.sass:estilos.css
+
+
+Mantener a la espera los cambios y actualizaciones:
+sass --watch estilos.sass:estilos.css
+
+==================
+Con Node
+==================
+
+Instalar Node en:
+https://nodejs.org/es/
+
+En la consola instalaremos SASS con el siguiente comando:
+
+npm install -g node-sass
+
+(Nota: El -g se aplica para que la instalación sea de manera global en la pc).
+
+Para saber la versión y también si ya está instalado podemos aplicar el siguiente
+comando:
+node-sass --version
+
+Comando para poder compilar SASS a CSS
+
+node-sass estilos.sass estilos.css
+
+Para que los archivos sean vijilados como en rub poner:
+node-sass estilos.sass estilos.css -w
+
+Y así ya va a empezar a colocar cambios automaticamente.
+Crtl + c para Detener los cambios automaticos.
+
+Comando especial [SASS]
+Creamos 2 carpetas en el directorio raíz de nuestro sitio.
+Una llamada css y la otra llamada sass y luego desde la raíz
+ejecutaremos el siguiente comando:
+
+node-sass -o css sass/estilos.sass -w
+
+node-sass: Es el comando de node.
+-o: Sirve para decirle a node en donde va a quedar nuestro 
+    archivo .css final, el que se compilo de sass.
+css: Para decirle que será la carpeta css
+Y luego la dirección del archivo .sass
+-w: para que se mantenga vigilando cambios en ese archivo.
+
+"Todo esto en conjunto crea 1 solo archivo .css con el nombre
+del archivo .sass que creamos y esto puede ser de multiples
+archivos .sass que sirven para crear la página web.
+Por lo tanto la optimizariamos creando 1 solo archivo .css 
+obtenido por este comando".
+
+
+========================================================================
+Con Visual Studio Code
+URL Video - Falcon Master: https://www.youtube.com/watch?v=A1tyKkkziTc
+========================================================================
+Para ver los cambios en vivo descargamos la extensión:
+Live Server (ó live reload)
+Author: Ritwick Dey
+
+Para SASS (esta la instale "yo" Luis Eduardo Garcia Mercado):
+Para tener todo bien colorido e identando buscar la extensión:
+sass
+Author: Syler
+
+Para compilar a css nuestro codigo sass escargamos la extensión:
+live sass compiler
+Author: Ritwick Dey
+
+Configuraciones
+URL para configurar el compilador de sass:
+https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md
+
+1.- Podemos entrar a Manage (la tuerquira de la esquina inferior izquierda).
+2.- Settings.
+3.- Extensions.
+4.- live sass compiler.
+5.- Podemos modificar los siguientes modulos para la compilación de nuestros archivos
+    y excluir carpetas que no se compilaran en nuestro proyecto.
+    
+    excludeList y formats
+
+=============================================================================================
+SASS - FUNCIONES
+URL documentación: https://sass-lang.com/documentation/modules
+=============================================================================================
+IMPORTACION DE MULTIPLES ARCHIVOS EN UNO SOLO
+===============================================
+
+Para importar varios archivos sass en 1 solo con @import.
+Creamos los estilos por ejemplo del header y los guardamos en
+la raíz de nuestra carpeta sass como (importante colocar el guión bajo andes del nombre 
+que le demos al archivo):
+_header.sass 
+Creamos un archivo por ejemplo layaout.sass que este importara ese archivo como
+por ejemplo (pero sin el guión, solo se utiliza cuando se guarda el archivo de esa sección):
+@import header.sass
+
+=============================================================================================
+FUNCIONES
+====================
+Para crear funciones con @mixin y @include.
+creamos un archivo sas y dentro colocamos la siquiente estructura como si fuera una función
+y pasandole (o no) cualquier cantidad de variables (ten en cuenta que son solo atributos de
+un bloque o etiqueta html):
+
+@mixin nombre_mixin($variable1,$variable2,$variebleN)
+	border-radius: $variable1
+	color: $variable2
+	padding: $variableN
+
+Ahora solo llamamos esa función dentro de un bloque, por ejemplo supongamos que tenemos un 
+bloque article en html y lo editaremos con sass:
+
+article
+	@include nombre_mixin(5px,#f2f2f2,20px)
+
+y con esto, a ese articulo le abra colocado los atributos del mixin "nombre_mixin" (se le 
+puede poner cualquier nombre a ese mixin).
+
+Esto funcionaria bien para crear componentes de estilos por bloques con SASS.
+
+============================================================================================
+EXTENCIONES ELEMENTOS A OTROS PARA AÑADIR ATRIBUTOS
+=====================================================
+Sirve para crear la base de estilos de algún elemento y luego extender de esas base de estilos
+a otro donde solo se le modifica una que otra propiedad. Se hace con @extend nombre_elemento
+Ejemplo en SASS:
+
+.boton
+	display: inline-block
+	padding: 15px 20px
+	background: none
+	color: #fff
+	text-decoration: none
+	margin-right: 20px
+
+.btn-rojo
+	//Aquí usamos la extensión de los atributos del elemento.
+	@extend .boton
+	background: #ff2732
+
+Como se observa, se crea un elemento de estilos base y luego otro que extentiende los atributos
+de ese elemento base y luego solo agrega o modifica atributos de ese otro elemento para hacerlo
+un poco diferente con propiedades unicas.
+
+
+
+
+
+

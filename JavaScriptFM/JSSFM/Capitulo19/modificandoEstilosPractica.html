@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Práctica Modificando Estilos del los Elementos</title>
+	<style>
+		.thumb{
+			width: 200px;
+			transition: 1500ms all ease;
+		} 
+		.grande{
+			width: 400px;
+		}
+		
+	</style>
+</head>
+<body>
+	<form action="">
+		<input type="button" value="Cambio de Tamaño" onclick="zoom();">
+	</form>
+	<img id="thumb" class="thumb" src="http://lorempixel.com/400/400/" width="400" alt="">
+	<script>
+		var zoom = function(){
+			var thumb = document.getElementById("thumb");
+			if(thumb.className=="thumb"){
+ 		alert("Grande")
+ 		thumb.setAttribute("class", "thumb grande");
+ 		// thum.className = "thumb grande";
+ 			}else{
+ 				alert("Pequeña")
+ 				thumb.setAttribute("class", "thumb");
+ 				// thum.className = "thumb";
+ 			}
+		}
+	</script>
+</body>
+</html>

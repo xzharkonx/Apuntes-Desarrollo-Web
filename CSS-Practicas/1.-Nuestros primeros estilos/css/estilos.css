@@ -1,0 +1,10 @@
+
+/* Estructura de una regla CSS
+body	<---> Selector, al elemento al que le queremos aplicar los efectos.
+color	<---> Propiedad, efecto o cambio que le queremos dar al o los elementos.
+blue	<---> Valor, el que le daremos a la propiedad. */
+
+body{
+	/* color del texto del cuerpo de la página */
+	color: blue;
+}

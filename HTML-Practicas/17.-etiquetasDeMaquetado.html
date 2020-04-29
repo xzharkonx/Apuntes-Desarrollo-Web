@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Etiquetas de maquetado</title>
+</head>
+
+<body>
+
+	<!-- Los div no tienen sentido semántico para el navegador, no define el contenido que tiene dentro
+		más que con la clase. -->
+	<div class="header">
+		<div class="nav"></div>
+	</div>
+
+	<!-- Para generar el bloque de abajo con atom -->
+	<!-- NO FUNCIONA en Visual Studio Code -->
+	<!-- .main>.articulo^+.sidebar+.footer -->
+	<!-- o también SI FUNCIONA-->
+	<!-- (.main>.articulo)+.sidebar+.footer -->
+
+	<div class="main">
+		<div class="articulo"></div>
+	</div>
+	<div class="sidebar"></div>
+	<div class="footer"></div>
+
+	<!-- Los Elementos Semanticos son aquellos que definen cual es el contenido que tendran dentro, y le sirven a los buscadores y navegadores web -->
+	<!-- Los Elementos NO Semanticos son los que no definen cual sera el contenido que tienen dentro -->
+
+	<!-- <div> Sirve de contenedor para cualquier elemento, NO tiene sentido semantico -->
+	<!-- <header> Nos permite establecer el encabezado de nuestra pagina web -->
+	<!-- <nav> Nos permite definir un conjunto de enlaces de navegacion -->
+	<!-- <section> Define una seccion en un documento que puede contener un grupo de contenido -->
+	<!-- <article> Define un articulo -->
+	<!-- <aside> Nos permite definir un area con contenido independiente al principal, como el sidebar -->
+	<!-- <footer> Nos permite establecer el pie de pagina de un documento -->
+
+	<!-- Elementos semánticos, tienen sentido para el navegador, definen el contenido que tiene dentro. -->
+	<!-- Generar con Emmet -->
+	<!-- (header>nav)+section+article+aside+footer>section.contacto+section.redes-sociales -->
+
+	<!-- <header>
+		<nav></nav>
+	</header>
+	<section></section>
+	<article></article>
+	<aside></aside>
+	<footer>
+		<section class="contacto"></section>
+		<section class="redes-sociales"></section>
+	</footer> -->
+
+</body>
+
+</html>

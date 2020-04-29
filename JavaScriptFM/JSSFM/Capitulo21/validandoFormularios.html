@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validando Formularios</title>
+</head>
+<body>
+	<form action="" name="formulario" method="get">
+		<input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:">
+		<br>
+		<input type="text" name="apellido" id="apellido" maxlength="30" placeholder="Apellido:">
+		<br>
+		<input type="radio" name="sexo" id="hombre" value="Hombre"> Hombre
+		<input type="radio" name="sexo" id="mujer" value="Mujer"> Mujer
+		<br>
+		<input type="checkbox" name="terminos" id="terminos"> Terminos y Condiciones
+		<br>
+		<input type="submit" name="btn" id="btn" value="Enviar">
+	</form>
+	<script>
+		;(function(){//Funcion, nombre del formulario, nombre del input[posicion],Funcion Obtener el valor
+			 var formulario = document.formulario.sexo[1].value;
+			 var cuentaText = 0;//Cuenta el numero de inputs de tipo texto
+			 var tipo = "text"//Almacena el tipo de atributo, Aqui es donde cambiaremos el dato para obtener la cuenta de cuantos hay de ese dato
+			 alert(formulario);
+			 for (var i = 0; i <= document.formulario.elements.length - 1; i++) {
+			 	alert(document.formulario.elements[i].type);
+			 	if(document.formulario.elements[i].type === tipo){
+			 		 cuentaText++;
+			 		 if(document.formulario.elements[i].name == "nombre"){
+			 		document.formulario.elements[i].value = "Luis";
+			 	}else {
+			 		document.formulario.elements[i].value = "Mercado";
+			 	}
+			 }
+			}
+			 alert("Cantidad de inputs de tipo \""+tipo+"\": "+cuentaText);
+			 // document.formulario.nombre.focus();//Para direccionar el puntero al input nombre si se equivoca
+
+		})();
+	</script>
+</body>
+</html>

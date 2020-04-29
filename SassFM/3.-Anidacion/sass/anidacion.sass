@@ -1,0 +1,33 @@
+$primario: #f9a03f
+
+body
+	background: #1b3d82
+	font-family: Arial
+
+.articulo
+	background: #e9f1f7
+	width: 500px
+	padding: 20px
+	.titulo
+		color: $primario
+	.autor
+		color: #4d5061
+	p
+		a
+			color: $primario
+	div
+		text-align: center
+		a
+			text-decoration: none
+			font-size: 25px
+			color: $primario
+			border: 1px solid $primario
+			border-radius: 10%
+			display: inline-block
+			padding: 5px 20px
+			&:hover
+				// text-decoration: underline
+				background: rgba(255,255,255,0.2)
+				color: #FFDC1D
+
+// & Sirve para entrar a la pseudoclase del elemento

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos de Tiempo</title>
+</head>
+<body>
+	<button id="btn-inicial">Iniciar</button>
+	<button id="btn-detener">Detener</button>
+	<script>
+		function saludo(){
+			alert('Hola mundo');
+		}
+		function limpiar(){
+			 clear.Timeout(tiempo);
+		}
+
+		//-------setTimeout()
+		//Sirve para colocar una funccion y ejecutarla con un delay de 3s
+		//Este se ejecuta 1 vez
+		var tiempo = setTimeout(saludo,3000);
+		// clear.Timeout(tiempo);
+
+		document.getElementById('btn-inicial').addEventListener('click', function(){
+				if(tiempo == null){
+				setTimeout(saludo, 3000);	
+				setTimeout(limpiar, 3001);
+				}else {
+					console.log('Ya se a presionado')
+				}
+				
+				
+		});
+
+		//-------setInterval()
+		//Sirve para colocar una funccion y ejecutarla con un delay de 3s
+		//Este se ejecuta por lo menos 1 vez en intervalos de los segundos
+		//dados
+		var intervalo = setInterval(saludo, 3000)
+		document.getElementById('btn-detener').addEventListener('click', function(){
+			//--Detener el intervalo de la funcion
+			clearInterval(intervalo);
+			console.log('Se a detenido el intervalo');
+		})
+	</script>
+</body>
+</html>

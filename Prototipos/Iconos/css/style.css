@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Roboto,Lato,Arial;
+	font-size: 16px;
+}
+
+.contenedor{
+	margin: 40px auto;
+	width: 100%;
+	max-width: 1000px;
+	background: #f2f2f2;
+
+
+}
+
+.contenedor .icono{
+	 text-align: center;
+/*	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;*/
+	 padding: 20px;
+	 font-size: 3em;
+	 opacity: .7
+
+	 /*background: #000;*/
+}
+
+.icono i:hover{
+	opacity: 1;
+}

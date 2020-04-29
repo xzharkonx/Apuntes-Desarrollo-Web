@@ -1,0 +1,30 @@
+body{
+	font-family: Arial, Sans-serif,Helvetica;
+}
+
+p{
+	text-align: justify;
+	/*Para que las letras empiecen con la primera letra en mayúscula*/
+	text-transform: capitalize;
+	/*Espacio entre las letras horizontalmente*/
+	letter-spacing: 3px;
+	/*Espacio entre las letras verticalmente*/
+	line-height: 30px;
+}
+
+h1{
+	/*Las letras que agreguemos o que lleven espacio en sus nombres 
+	se colocan entre comillas*/
+	font-family:"Times New Roman",Arial;
+	font-size: 28px;
+	font-style: italic;
+	/*por si queremos la letra en nornal o negrita (bold)*/
+	font-weight:normal;
+	color:#4281ed;
+	text-align: left;
+	/*para indicar si queremos subrayada la letra o no (none), o tacharla con line-through*/
+	text-decoration: underline;
+	/* Mayusculas uppercase, Minusculas lowercase, Primera letra mayúscula capitalize */
+	text-transform: capitalize;
+
+}

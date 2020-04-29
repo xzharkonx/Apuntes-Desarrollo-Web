@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<h1 id="titulo">Titulo de nuestro sitio web</h1>
+	<div id="subtitulo"></div>
+	<p>1.- Lorem ipsum <b>dolor</b> sit amet, consectetur adipisicing elit. Error reiciendis molestias obcaecati, quae temporibus odio voluptatibus minus quas iure repellat blanditiis voluptatem, sapiente, eveniet saepe exercitationem consequuntur. Veniam, quae impedit.	</p>
+	<p id="segundo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fugiat ad error consectetur ipsam tempora adipisci. Veniam dolorum minima doloremque in, quibusdam voluptatem ex similique voluptate, at placeat rerum delectus.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora porro eveniet minima aspernatur, hic ipsa eos saepe, ullam error mollitia, voluptatem consequuntur necessitatibus magni nesciunt vitae dicta tenetur voluptas. Sed.</p>
+	<script>
+		var elementosP = document.getElementsByTagName('p');
+		var segundoParrafo = document.getElementById('segundo');
+
+	// 1.- Crear el elemento
+		var elemento = document.createElement("h2");
+	// 2.- Crear un nodo de texto
+		var contenido = document.createTextNode("Este es nuestro titular");
+	// 3.- Añadir el nodo de texto al elemento
+		elemento.appendChild(contenido);
+	// 4.- Agregar atributos al elemento
+		elemento.setAttribute("aling","center");
+		elemento.setAttribute("style","color:#0174DF;");
+	// 5.- Agregar el elemento al documento
+	document.getElementById("subtitulo").appendChild(elemento);
+	// document.body.appendChild(elemento);
+	//Titulo Background
+	var titulo = document.getElementById("titulo");
+	titulo.setAttribute("style","background-color:#00FFFF;");
+	</script>
+
+</body>
+</html>

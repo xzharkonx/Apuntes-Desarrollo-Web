@@ -1,0 +1,27 @@
+/* Ejemplo de Selector de Hijos */
+/* Para poder seleccionarlos directamente en ese orden
+y NO de manera general para todos los div que tengan un p */
+div > p {
+	font-size:20px;
+}
+
+/* Ejemplo de Selector de Atributos */
+
+/*Selecciona todos los input que tengan un atributo type*/
+input[type] {}
+
+/*Selecciona todos los input que tengan el atributo type y el valor text*/
+input[type="text"] {}
+
+
+/* ----- HERENCIA ----- */
+/* Todos los elementos te la pagina heredaran los estilos del padre mas cercano, hasta que se le especifique lo contrario */
+body {
+	font-size:20px;
+	color:blue;
+}
+
+article {
+	font-size: 16px;
+	color: black;
+}
