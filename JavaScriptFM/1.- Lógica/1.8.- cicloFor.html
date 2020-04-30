@@ -38,6 +38,8 @@ var meses = ['Enero', 'Febrero', 'Marzo', 'Abril',
 
 // ----- Ciclo para recorrer un arreglo mediante for in
 		for (mes in meses) {
+			// Se coloco ++mes para que no empezara desde el 0
+			document.write(++mes+".- ");
 			document.write(meses[mes]);
 			document.write('<br>');
 		}		
