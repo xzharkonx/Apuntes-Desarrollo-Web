@@ -2,7 +2,15 @@
   color: #226fc1;
 }
 
+.articulo .autor {
+  color: #00e1ff;
+}
+
 .articulo p {
-  color: #fff;
+  color: #15ff00;
+}
+
+p {
+  color: black;
 }
 /*# sourceMappingURL=variables.css.map */

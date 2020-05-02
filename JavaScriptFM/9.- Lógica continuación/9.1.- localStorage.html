@@ -6,18 +6,22 @@
 </head>
 <body>
 	<script>
+		// Local Storage
+		// Guarda las variables y lo que querramos en la computadora
+		// del usuario
 		// Comprobamos que el navegador soporte Local Storage
 		if (typeof(Storage) !== "undefined"){
 			// document.write('Si soporta');
 
 			// Establecemos un nuevo valor
 			localStorage.setItem('nombre', 'Luis Eduardo');
+			// También se puede hacer de esta forma:
 			// localStorage.nombre = 'Luis';
 		} else {
 			document.write('Tu navegador no soporta Web Storage');
 		}
 
-// ----- ----- ----- -----
+// ----- ----- ----- ----- 
 
 	// Llamamos al nombre guardado en localStorage
 	// document.write(localStorage.nombre);
@@ -26,7 +30,8 @@
 	// localStorage.removeItem('nombre');
 
 // ----- ----- ----- ----- Session Storage
-
+	// Con sessión storage, lo que hace es guardar el valor
+	// mientras las ventana no se cierra, si se cierra, se pierde.
 	// sessionStorage.nombre = 'Luis';
 	// document.write(sessionStorage.nombre);
 
