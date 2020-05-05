@@ -17,22 +17,30 @@
 		// Motrar caja
 		// $('.caja').show();
 
-		// Intercambiar entre metodo para ver y ocultar
-		// la caja
+		// Alternar los estados entre oculto y visible
 		// $('.caja').toggle(400);
 
 
 		// Fades (Desvanecer y aparecer)
+		// Lo que hace es mostrar el elemento
+		// El elemento tienen que estar oculto
 		// $('.caja').fadeIn();
+
+		// Lo que hace es ocultar el elemento
+		// El elemento tienen que estar visible
 		// $('.caja').fadeOut();
+
+		// Para intercambiar entre visible y oculto con este efecto
 		// $('.caja').fadeToggle();
 
 		// Sliding (Deslizar)
 
 		// Aparecer deslizando de arriba abajo
+		// El elemento tienen que estar oculto
 		// $('.caja').slideDown();
 
 		// Desaparecer deslizando de abajo hacia arrba
+		// El elemento tienen que estar visible
 		// $('.caja').slideUp();
 
 		// Intercambiando el deslize

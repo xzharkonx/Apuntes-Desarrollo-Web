@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document Object Model</title>
 </head>
+
 <body>
 	<ol id="lista">
 		<li id="primero">Lorem ipsum dolor sit amet.</li>
@@ -18,11 +20,11 @@
 
 		//REMPLAZANDO ELEMENTOS DE UN LI POR OTRO EN ESTE CASO***************
 		var elemento = document.createElement("li"),
-			contenido=document.createTextNode("Nuevo Texto juju");
+			contenido = document.createTextNode("Nuevo Texto juju");
 		elemento.appendChild(contenido);
 		var padre = document.getElementsByTagName("li")[0].parentNode;
 		var referencia = document.getElementsByTagName("li")[0];
-		padre.replaceChild(elemento,referencia);
+		padre.replaceChild(elemento, referencia);
 		//REMPLAZANDO ELEMENTOS DE UN LI POR OTRO EN ESTE CASO**************
 
 		//ELIMINANDO ELEMENTOS DE LA LISTA**********************************
@@ -30,4 +32,5 @@
 		padre.removeChild(referencia2);
 	</script>
 </body>
+
 </html>

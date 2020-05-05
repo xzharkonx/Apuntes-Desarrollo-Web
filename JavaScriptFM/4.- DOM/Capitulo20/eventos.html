@@ -21,6 +21,8 @@
 			var saludoInput = function(){
 				console.log("Focus!!");
 			}
+
+			//Cuando se hace click fuera del input
 			input.addEventListener("focus", saludoInput);
 
 
@@ -38,7 +40,7 @@
 
 			input.addEventListener("change", respuesta);
 			input.addEventListener("change", respuesta2);//Elemento a Remover
-			input.removeEventListener("change", respuesta2);//Removemos el Elemento de la Función res´puesta2
+			input.removeEventListener("change", respuesta2);//Removemos el Elemento de la Función respuesta2
 
 
 			var boton2 = document.getElementById("Antes");
@@ -47,8 +49,8 @@
 				console.log("Este evento es de tipo: "+e.target);//Muestra el tipo de elemento que es
 				alert("Direccionando al inicio");
 				e.preventDefault()
-
-				location.href ="http://localhost/JavaScriptFM/";
+				//Redireccionando
+				location.href ="#";
 			}
 			boton2.addEventListener("click", antes);
 		}());

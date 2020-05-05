@@ -11,7 +11,13 @@ $(document).ready(function(){
 			alert('No te desaras de mi xD JAJAJAJA');
 		}
 
-	$('h1').hide(2000,function(){
+	// Otra forma de ejecutar la funcion
+	// function aparecer(){			
+	// 	$('h1').show(3000);
+	// 	alert('No te desaras de mi xD JAJAJAJA');
+	// }
+
+	$('h1').hide(5000,function(){
 		alert('Desaparesi JAJAJAJA');
 		// aparecer();
 		aparecer();

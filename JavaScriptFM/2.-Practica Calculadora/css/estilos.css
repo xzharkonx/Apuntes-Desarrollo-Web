@@ -43,6 +43,7 @@ form .btn{
 	padding: 20px;
 	display: inline-block;
 	text-decoration: none;
+	margin-bottom: 10px;
 }
 
 form .btn:hover{

@@ -14,3 +14,7 @@ var resta = function(){
 	signo.textContent = '-';
 	document.getElementById("resultado").value = resultado;
 }
+
+var bienvenido = function(b){
+	alert(b)
+}
