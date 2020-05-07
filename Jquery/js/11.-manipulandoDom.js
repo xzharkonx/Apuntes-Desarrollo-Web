@@ -10,6 +10,9 @@ $(document).ready(function(){
 	nombre.on('change', function(){
 		$('#titulo').text(nombre.val());
 	});
+
+	//Poniendole valor al input
+	// nombre.val('cualquier cosa')
 	
 // .attr()
 	$('#enlace').text('FalconMasters.com');

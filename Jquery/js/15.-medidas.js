@@ -18,6 +18,7 @@ $(document).ready(function(){
 
 // .outerWidth(true)
 // Calcula el ancho del elemento + el padding + el borde + margin
+// Le pasamos el valor true
 	info.append('<u>'+'Ancho Externo Maximo: ' + titulo.outerWidth(true) + '<br>'+'</u>');
 
 // -----
@@ -36,6 +37,7 @@ $(document).ready(function(){
 	
 // .outerHeight()
 // Calcula el alto del elemento + el padding + el borde + margin
+// Le pasamos el valor true
 	info.append('<u>'+'Alto Externo Maximo: ' + titulo.outerHeight(true) + '<br>'+'</u>');
 
 

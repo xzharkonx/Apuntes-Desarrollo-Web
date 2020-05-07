@@ -28,6 +28,9 @@ $(document).ready(function(){
 	// 	console.log('Saludos');
 	// });
 
+	// Queremos desactivar el evento click
+	// del boton cuando el usuario haga click
+	// en el boton de desactivar
 	// $('#desactivar').on('click', function(){
 	// 	boton.off('click');
 	// 	console.log('Boton de Ejecutar Desactivado');
@@ -37,7 +40,8 @@ $(document).ready(function(){
 	$('a').on('click', function(e){
 		e.preventDefault();
 		alert('Link desactivado');
-		
+		//Redireccionando
+		// location.href ="#";
 	});
 
 })

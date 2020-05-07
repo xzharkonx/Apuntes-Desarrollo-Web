@@ -126,7 +126,7 @@ por ejemplo (pero sin el guión, solo se utiliza cuando se guarda el archivo de 
 FUNCIONES
 ====================
 Para crear funciones con @mixin y @include.
-creamos un archivo sas y dentro colocamos la siquiente estructura como si fuera una función
+creamos un archivo SASS y dentro colocamos la siquiente estructura como si fuera una función
 y pasandole (o no) cualquier cantidad de variables (ten en cuenta que son solo atributos de
 un bloque o etiqueta html):
 

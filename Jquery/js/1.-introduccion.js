@@ -7,8 +7,8 @@ $(document).ready(function(){
 		accion - Lo que queremos hacer con el elementos seleccionado.
 	*/
 	var aparecer = function(){			
-			$('h1').show(3000);
-			alert('No te desaras de mi xD JAJAJAJA');
+			$('h1').show(8000);
+			alert('Pero ahora me ves');
 		}
 
 	// Otra forma de ejecutar la funcion
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	// }
 
 	$('h1').hide(5000,function(){
-		alert('Desaparesi JAJAJAJA');
+		alert('Ahora no me ves');
 		// aparecer();
 		aparecer();
 	});	

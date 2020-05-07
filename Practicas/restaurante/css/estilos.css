@@ -61,13 +61,12 @@ header .textos {
 	margin-top: -52px;
 }
 header .textos .nombre{
-	font-style: 50px;
+	font-size: 50px;
 	font-weight: 600;
 }
 
 header .textos .nombre span{
 	font-weight: 300;
-	font-style: italic;
 }
 
 header .textos h3{

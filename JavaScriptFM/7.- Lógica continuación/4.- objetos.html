@@ -57,14 +57,41 @@
 		this.pais = pais;
 	}
 
+	function vehiculo(nombre = false, marca = false, matricula = false){
+		if (!nombre){nombre='Nombre no introducido'}
+		if (!marca){marca='Marca no intruducida'}
+		if (!matricula){matricula='Matricula no intruducida'}
+		this.nombre=nombre;
+		this.marca=marca;
+		this.matricula=matricula;
+	}
+
 	var papa = new persona('Carlos', 20, 'Mexico');
 	var amigo = new persona('Alex', 32, 'España');
 	var hermano = new persona('Christopher', 32, 'Colombia');
 
+	//Vehiculos
+	var v = new vehiculo('Tsuru');
+	var vento = new vehiculo(false,'volsWagen','XLS-ASD');
+
 	document.write(papa.nombre);
 	document.write('<br>');
 	document.write(hermano.edad);
-
+	document.write('<br>');
+	document.write('<br>')
+	document.write('-------------------------');
+	document.write('<br>')
+	document.write(v.matricula);
+	document.write('<br>');
+	document.write(v.marca);
+	document.write('<br>');
+	document.write('-------------------------');
+	document.write('<br>')
+	document.write(vento.nombre);
+	document.write('<br>');
+	document.write(vento.marca);
+	document.write('<br>');
+	document.write(vento.matricula);
 	</script>
 </body>
 </html>

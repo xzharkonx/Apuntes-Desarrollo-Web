@@ -6,7 +6,7 @@ $(document).ready(function($) {
 
 	// Esconder un elemento con clase
 	// $('.encabezado').hide();
-	// Esconder un elemento con if
+	// Esconder un elemento con id
 	// $('#encabezado').hide();
 	
 	// Esconder una etiqueta con su id
@@ -15,7 +15,7 @@ $(document).ready(function($) {
 	// $('p.primero').hide()
 
 	// Esconder todos los elementos a que tengan como padre 
-	// un elemento con na clase primero
+	// un elemento con una clase primero
 	$('.primero a').hide();
 
 	// Funciona como en CSS

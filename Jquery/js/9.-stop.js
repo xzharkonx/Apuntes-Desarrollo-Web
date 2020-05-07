@@ -16,10 +16,26 @@ $(document).ready(function(){
 	});
 
 	$('#parar').on('click', function(){
-		//.stop(limpiarAnimaciones, Saltar al final);
+		//.stop(limpiarcoladeAnimaciones, Saltar al final);
+		// Para la animación
 		$('.caja').stop();
+
+		// El colocarle los parametros
+		// Sirve para cuando tengamos varias animaciones
+		
+		// Cuando se precione, la animación actual se para
+		// pero no salta a la última animación se va a parar
+		//Si fuera en la última animación, lo que hace es reiniciar
+		//el ciclo
 		// $('.caja').stop(true, false);
+
+		// Para las animaciones y salta a la última
 		// $('.caja').stop(false, true);
+
 		// $('.caja').stop(true, true);
+
+		//Limpiar la cola de animaciones significa que al acabar
+		// la animación actual, todas las demás que se ivan a ejecutar
+		// ya no lo harán
 	});
 });
