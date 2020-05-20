@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,IAAI,CAAA;EACH,UAAU,EAAE,OAAO;CACnB;;AAED,AAAA,SAAS,CAAA;EACR,UAAU,EAAE,IAAI;CAShB;;AAVD,AAEC,SAFQ,CAER,OAAO,CAAA;EACN,KAAK,EAAE,IAAI;CACX;;AAJF,AAME,SANO,CAKR,CAAC,CACA,CAAC,CAAA;EACA,eAAe,EAAE,IAAI;CACrB",
-    "sources": [
-        "../SassFM/1.- Sintaxis/css/sintaxis.scss"
-    ],
-    "names": [],
-    "file": "sintaxis.css"
-}

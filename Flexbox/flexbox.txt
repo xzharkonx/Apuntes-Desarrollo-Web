@@ -46,7 +46,7 @@ si no caben las posicionara debajo.
 Nos permite editar la posición verticalmente de nuestras cajas
 siempre y cuando la caja padre tenga un alto demaciado grande.
 - align-items:;
-	flex-start | flex-end | center | stretch | baseline
+	flex-start | flex-end | center | stretch | baseline | stretch | baseline
 
 	stretch:
 		Esta propiedad hace que todas las cajas o div hijas tomen todo el tamaño ya sea
@@ -69,11 +69,17 @@ Recuerda que si pones esta NO DEBES tener la de alig-items
 Propiedades de los elementos hijo
 =================================
 
-Cambiar el orden de las cajas hijo.
-Podemos enumerar por orden cada conjunto de cajas (o caja) con una clase
-y otro conjunto de cajas (o caja) con otra clase y aplicando la propiedad
-order podremos ordenarlas segun su numeración.
-- order:1;
+- order:;	
+	Cambiar el orden de las cajas hijo.
+	Podemos enumerar por orden cada conjunto de cajas (o caja) con una clase
+	y otro conjunto de cajas (o caja) con otra clase y aplicando la propiedad
+	order podremos ordenarlas segun su numeración.
+
+
+	Por ejemplo:
+	- order: 1; // En todos los elementos con una clase en común.
+	- order: 2; // De todos los elementos que seleccionamos a algunos de ellos (a los que querramos)
+		les colocaremos otra clase y esos seran los elementos que querramos reordenar.
 
 - flex-grow:;
 	Acepta un número que servira de proporcion para hacer crecer el elemento en relacion a los otros.
@@ -82,6 +88,11 @@ order podremos ordenarlas segun su numeración.
 
 	Si todos los elementos tienen flex-grow 1 el espacio restante se distribuira entre los elementos.
 
+	Por ejemplo:
+	- flex-grow: 1; // En todos los elementos con una clase en común.
+	- flex-grow: 2; // De todos los elementos que seleccionamos a algunos de ellos (a los que querramos)
+		les colocaremos otra clase y esos seran los elementos que querramos proporcionar.
+
 - flex-shrink:;
 	Define la habilidad de un elemento para hacerse mas pequeño.
 	Es decir, que si tiene 200px de ancho, no bajará de ese ancho si ponemos:
@@ -89,9 +100,19 @@ order podremos ordenarlas segun su numeración.
 	Por defecto todos se pueden hacer mas pequeños pero si le ponemos flex-shrink 0
 	el elemento no podra ser mas pequeño que su ancho especificado.
 
+	Por ejemplo:
+	- flex-shrink: 1; // En todos los elementos con una clase en común.
+	- flex-shrink: 2; // De todos los elementos que seleccionamos a algunos de ellos (a los que querramos)
+		les colocaremos otra clase y esos seran los elementos que querramos disminuir la proporcion.
+
 - flex-basis:;
 	Nos permite especificar el valor inicial que tendra un elemento.
+	Es como un width pero conserva su tamaño si es cambiado de flex-direction: row a flex-direction: column
+	porque esto suele suceder con los media queries que tienes que cambiar la dirección de algunas cosas
+	y esto afecta al ancho de la estructura.
 
+	Por ejemplo:
+	flex-basis: 200px;
 
 - flex:1 1 auto;
 	Es un atajo para flex-grow, flex-shrink y flex-basis.

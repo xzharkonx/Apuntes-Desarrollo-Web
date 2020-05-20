@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAKA,AAEC,SAFQ,CAER,OAAO,CAAC;EAEP,KAAK,EATS,OAAO;CAWlB;;AANL,AAQI,SARK,CAQL,MAAM,CAAC;EACH,KAAK,EAXL,OAAO;CAYV;;AAVL,AAYI,SAZK,CAYL,CAAC,CAAC;EACE,KAAK,EAjBH,OAAe;CAkBpB;;AAIL,AAAA,CAAC,CAAC;EACE,KAAK,EAtBD,KAAY;CAuBnB",
-    "sources": [
-        "../SassFM/2.-Variables/sass/variables.scss"
-    ],
-    "names": [],
-    "file": "variables.css"
-}
