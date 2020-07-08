@@ -9,7 +9,7 @@
 		function validarNombre(e){
 			if(nombre.value == '' || nombre.value ==null){
 				error.style.display = 'block';
-				error.innerHTML+= '<li>Por favor completa el nombre</li>'
+				error.innerHTML+= '<li>Por favor completa el nombre.</li>'
 				e.preventDefault();
 			}else{
 				validacion = true;
@@ -19,7 +19,7 @@
 		function validarCorreo(e){
 			if(correo.value == '' || correo.value ==null){
 				error.style.display = 'block';
-				error.innerHTML+= '<li>Por favor completa el correo</li>'
+				error.innerHTML+= '<li>Por favor completa el correo.</li>'
 				e.preventDefault();
 			}else{
 				validacion = true;
@@ -28,7 +28,7 @@
 		function validarSexo(e){
 			if(sexo.value == '' || sexo.value ==null){
 				error.style.display = 'block';
-				error.innerHTML+= '<li>Por favor completa el sexo</li>'
+				error.innerHTML+= '<li>Por favor completa el sexo.</li>'
 				e.preventDefault();
 			}else{
 				validacion = true;
@@ -37,7 +37,7 @@
 		function validarTerminos(e){
 			if(terminos.checked == false){
 				error.style.display = 'block';
-				error.innerHTML+= '<li>Por favor completa los terminos</li>'
+				error.innerHTML+= '<li>Por favor completa los términos.</li>'
 				e.preventDefault();
 			}else{
 				validacion = true;
