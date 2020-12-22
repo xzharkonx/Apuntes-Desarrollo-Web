@@ -31,3 +31,12 @@ div{
 .caja7{border: 7px inset#000}
 .caja8{border: 7px outset#000}
 
+.caja9{border-top: solid 7px rgb(255, 0, 0);}
+.caja10{border-right: solid 7px rgb(9, 255, 0);}
+.caja11{border-bottom: solid 7px rgb(251, 255, 0);}
+.caja12{border-left: solid 7px rgb(255, 0, 242);}
+
+/* Más info en: 
+https://www.w3schools.com/css/css_border.asp
+https://www.w3schools.com/css/css_border_color.asp 
+https://www.w3schools.com/css/css_border_sides.asp */
