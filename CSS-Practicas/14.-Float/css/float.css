@@ -14,9 +14,13 @@ Corrige el error de la caja padre que no
 se muestra por que al ponerle la propiedad
 float a las otras cajas, no sabe como 
 abarcarlas. */
+
+/* También ocultara todo lo que salga fuera de la caja */
+
 .cajaPadre{
 	background: #2e294a;
 	width: 700px;
+	/* ---1ra forma--- */
 	overflow: hidden;
 }
 
@@ -26,6 +30,12 @@ También corrige el error de la caja padre,
 pero en este caso se coloca un div al final
 de la caja padre por debajo de las demás
 con la clase paraa colocarle esta propiedad*/
+
+/* También es como si diera un salgo de línea de ese elemento,
+es como si se diera un enter. */
+
+/* ---2da forma--- */
+
 /*.clear {
 	clear:both;
 }*/
@@ -46,6 +56,23 @@ con la clase paraa colocarle esta propiedad*/
 
 .dos{
 	float:right;
+
+	/* ---1ra forma--- */
+
+	/* Mira como se oculta todo lo de afuera si ponemos
+	a la caja padre la propiedad de: overflow: hidden; */
+	/* Para ello movemos la caja hacia abajo para ver que
+	se sale de la cahja padre, pero no se vea lo que esta afuera */
+	
+	/* position:relative;
+	top:100px; */
+
+	/* ---2da forma--- */
+
+	/* Si queremos que la caja se salga y se vea, tenemos que hacerlo
+	con la propiedad clear:both y creando un div debajo de el div de esta
+	clase. Así se vera la caja y no se perderá el fondo. */
+
 }
 
 .articulo{
@@ -61,4 +88,7 @@ con la clase paraa colocarle esta propiedad*/
 }
 .articulo img{
 	float:left;
+
+	/* Colocandole el floar a la imagen podremos ver que el texto que le sigue
+	se acomoda a la izquierda pegada a está imagen. */
 }
