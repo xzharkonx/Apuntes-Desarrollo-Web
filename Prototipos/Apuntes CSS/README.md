@@ -22,7 +22,8 @@
 
 ---
 
-### Elementos/Etiquetas tipo en línea
+### Elementos/Etiquetas tipo en línea/inline
+- A los elementos inline no se les puede dar un padding o un width o un height.
 
 - a
 - span
