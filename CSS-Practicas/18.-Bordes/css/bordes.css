@@ -36,6 +36,8 @@
 .caja11{border-bottom: solid 7px rgb(251, 255, 0);}
 .caja12{border-left: solid 7px rgb(255, 0, 242);}
 
+.border-radius{ border-radius:100% ; -webkit-border-radius:100% ; -moz-border-radius:100% ; -ms-border-radius:100% ; -o-border-radius:100% ; }
+
 /* Más info en: 
 https://www.w3schools.com/css/css_border.asp
 https://www.w3schools.com/css/css_border_color.asp 
