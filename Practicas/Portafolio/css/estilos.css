@@ -248,6 +248,13 @@ footer .contacto .formulario input[type="text"]:focus,
 footer .contacto .formulario input[type="email"]:focus,
 footer .contacto .formulario textarea:focus{
 	border: 2px solid #3895ea;
+	/* La línea de abajo daba problemas porque dejaba el color en negro. */
+	/* outline: -webkit-focus-ring-color auto 1px; */
+	/* Entonces se modifico para que agarrará el color que le colocamos. */
+	/* outline: #3895ea auto 1px; */
+	/* O bien ponerle a los estilos del formulario el siguiente atibuto para que 
+	se desactive la línea del formulario. */
+	outline: none;
 }
 
 footer .contacto .formulario input[type="text"],
