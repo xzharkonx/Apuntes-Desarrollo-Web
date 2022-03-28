@@ -1,5 +1,9 @@
 * {} /* Selector universal, selecciona todos los elementos de la pagina */
 
+body{
+	font-family: roboto;
+}
+
 /* Ejemplos de selector de Etiqueta */
 /* Si queremos agregarle más elementos se agrega una , */
 h1, h2, h3, h4, h5, h6 {
@@ -25,6 +29,31 @@ div p a {
 
 .grande {
 	font-size: 28px;
+}
+
+/* Ejemplo de Selector de 2 Clases en una etiqueta */
+
+.contenedor.contenido {
+	max-width: 1000px;
+	width: 90%;
+	margin: 30px auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+
+}
+
+.contenedor.contenido h1 {
+	margin: 0;
+	font-size: 42px;
+	font-weight: bold;
+	color:black;
+	padding: 20px;
+}
+
+.contenedor.contenido p {
+	padding: 20px;
+	line-height: 28px;
+	color: #000;
 }
 
 /* Ejemplo de Selector de ID */

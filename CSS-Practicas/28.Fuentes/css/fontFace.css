@@ -32,5 +32,11 @@ p{
 	/*Para hacer bold la fuente de google*/
 	/*Según sus especificaciones en la
 	página de google fonts*/
-	/*font-weight: 700;*/
+	font-style: italic;
+	font-size: large;
+}
+
+p>span {
+	font-weight: 700;
+	font-size: xx-large;
 }

@@ -21,3 +21,16 @@
 	border-radius: 100%;
 }
 
+
+.publicacion {
+    /* background: #000; */
+    color: #00b7ff;
+    padding: 10px;
+
+	/* inset | Lo que hace es como que combina las sombras. */
+    /* inset | offset-x | offset-y | color */
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                      0 0  0 2px rgb(255,255,255),
+                      0.3em 0.3em 1em rgba(0,0,0,0.3);                    
+}

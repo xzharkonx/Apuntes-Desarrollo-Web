@@ -47,3 +47,7 @@
 ---
 La etiqueta div por lo general nos ayudará a colocar imagenes o texto que no se nos ocurra poner en alguna sección.
 O contenido no tan relevante paa el buscador Web.
+
+- /*Importante para quitar los margenes
+	de los titulos h*/
+	margin: 0;

@@ -45,7 +45,7 @@
 	/*Puede ser en ves de infinite,
 	el numero de veces que hará la animación*/
 	animation: movimiento 5s ease 2;
-		animation-name:colores;
+	animation-name:colores;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 }
