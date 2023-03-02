@@ -38,7 +38,7 @@ Es obligatorio agregar la etiqueta
 content: '';
 para que se reflejen los cambios*/
 .caja::before{
-	content: 'Contenido andes de la caja';
+	content: 'Contenido antes de la caja';
 	display: block;
 	background: #3a3a3a;
 	color: #fff;
@@ -51,11 +51,12 @@ para que se reflejen los cambios
 */
 
 .caja::after{
-	content: '';
+	content: 'Contenido despues de la caja';
 	width: 50px;
 	height: 50px;
 	display: block;
 	background: #000;
+	color:rgb(255, 0, 0);
 	position: relative;
 	left: 200px;
 }

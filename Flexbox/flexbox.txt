@@ -14,13 +14,15 @@ Propiedades del contenedor padre:
 
 - display:flex;
 	Nos permite habilitar que los elementos hijos sean flexibles
-	por default coloca las siguientes propiedades
+	por default coloca las siguientes propiedades.
 	- flex-direction: row;
 	- flex-wrap: no-wrap;
+	Los hijos son de tipo block.
 	
 También existe
 - display:  inline-flex;
 	Para casi lo mismo pero casí no se usa.
+	Los hijos ahora serán de tipo inline.
 
 - flex-direction:;
 	row | row-reverse | column | column-reverse

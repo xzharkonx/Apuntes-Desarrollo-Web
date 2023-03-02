@@ -35,7 +35,7 @@ Unidades Abosultas
 /* Pero si en el body se especifica que font-size: 20px
 entonces 1em equivaldria a esos 20px */
 
-/* Para transforma los pixeles a em de cualquiera de nuestros elementos
+/* Para transformar los pixeles a em de cualquiera de nuestros elementos
 hay que dividir esos pixeles entre los pixeles del body. 
 Por ejemplo: 200px de ancho y alto de un div 
 entre 20 px de font-size que tiene el body */

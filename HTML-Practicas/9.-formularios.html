@@ -7,30 +7,54 @@
 <body>
 		<form action="" method="">
 			<!-- Atributos de validacion o restricción -->
-			<!-- 	disabled Input desabilitado
+			<!-- 	
+			disabled Input desabilitado
 			required Atributo requerido
 			maxlength="10"
-			readonly De solo lectura
-			size="20" Para alargar los formlarios aunque es mejor hacrlo con css -->
+			readonly De solo lectura / Solo sirve en inputs, en select no.
+			size="20" Para alargar los formlarios aunque es mejor hacerlo con css -->
 			<!-- El atributo de for en los label se relaciona en base al id del input -->
-
+			<!-- La etiqueta de select tiene una caracteristica diferente de los inputs al
+			bloquearse con disabled porque con readonly no funciona, si esto es necesario, entonces 
+			el valor que se selecciono en el select no se enviará, para ello, al momento de hacer un cambio
+			la acción de change se activará y aquí podemos asignarle el valor al que cambiamos 
+			a un input oculto(hidden) de esta forma podremos bloquearlo/ocultarlo y recuperar el valor 
+			en ese input oculto(hidden)	que colocamos -->
+			
 			<label for="nombre">Nombre: </label>
 			<input type="text" placeholder="Nombre:" id="nombre" name="nombre">
 			<br />
-
+			
 			<label for="correo">Correo:</label>
 			<input type="email" name="correo" id="correo" placeholder="Correo">
 			<br />
-
+			
+			<label for="avatar">Avatar: </label>
+			<input type="text" placeholder="Avatar:" id="avatar" name="avatar" disabled>
+			<br />
+			
+			<label for="edad">Edad: </label>
+			<input type="text" placeholder="Edad:" id="edad" name="edad" readonly>
+			<br />
+			
 			<label for="mensaje">Mensaje:</label>
 			<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 			<br />
-
+			
 			<label for="pais">Pais:</label>
 			<select name="pais" id="pais">
 				<option value="mexico">México</option>
 				<option value="españa" selected>España</option>
 				<option value="argentina">Argentina</option>
+			</select>	
+			<br />
+			
+			<!-- Este select si tiene el atributo disabled entonces el valor no será enviado. -->
+			<label for="estado">Estado:</label>
+			<select name="estado" id="estado" disabled>
+				<option value="EdoMex">EdoMex</option>
+				<option value="tabasco" selected>Tabasco</option>
+				<option value="guerrero">Guerrero</option>
 			</select>	
 			<br />	
 
