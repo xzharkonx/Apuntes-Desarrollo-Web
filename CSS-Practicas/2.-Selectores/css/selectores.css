@@ -62,4 +62,6 @@ div p a {
 }
 
 /* Ejemplo de Combinacion de Selectores */
-.main article p {}
+.main article p {
+	color: lightsalmon;
+}

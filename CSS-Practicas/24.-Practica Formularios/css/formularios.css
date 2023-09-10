@@ -64,6 +64,7 @@ dentro de el con la propiedad focus*/
 .formulario input[type="submit"]{
 	width: 200px;
 	margin: 0 auto;
+	/* margin: 0 260px; */
 	background: none;
 	border: 1px solid #4fb560;
 	color: #4fb560;

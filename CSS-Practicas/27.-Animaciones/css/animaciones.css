@@ -34,7 +34,7 @@
 	animation-name:colores;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
-	animation: movimiento 5s ease 2;
+	animation: movimiento 5s ease 4;
 }
 
 .caja2{
@@ -44,8 +44,32 @@
 	background: #9eb3c2;
 	/*Puede ser en ves de infinite,
 	el numero de veces que hará la animación*/
-	animation: movimiento 5s ease 2;
-	animation-name:colores;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
+	/* animation: movimiento 5s ease infinite; */
+	/* Con un Delay (retraso)  en segundos (s) antes de iniciar */
+	/* animation: movimiento 5s ease 5s; */
+
+	/* 1 Animacion completa a una linea */
+	/* Animacion(@keyframes  x) | TiempoAnimacion(s) | TipoTransicion(ease) | Delay(s) | Repeticion(n,inifinite) */
+	/* animation: movimiento 5s ease 5s 2; */
+
+	/* Unir 2 o mas animaciones con una , */
+	animation: movimiento 5s ease 5s 2, colores 5s ease 5s 2;
+	/* animation-name:colores; */
+	/* animation-duration: 5s; */
+	/* animation-iteration-count: infinite; */
 }
+
+
+/* ------------- */
+
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+/* animation: 3s ease-in 1s 2 reverse both paused slidein; */
+
+/* @keyframes duration | easing-function | delay | name */
+/* animation: 3s linear 1s slidein; */
+
+/* two animations */
+/* animation:
+  3s linear slidein,
+  3s ease-out 5s slideout; */
